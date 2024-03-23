@@ -37,13 +37,13 @@ public class Transaction extends Bank implements TransactionInterface{
 	}
 
 	public void credit(double amount) {
-		// complete the function
+		
 		bank.credit(accountNumber,amount);
 		
 	}
 
 	public boolean debit(double amount) {
-		// complete the function
+		
 		return bank.debit(accountNumber,amount);
 	}
 }
