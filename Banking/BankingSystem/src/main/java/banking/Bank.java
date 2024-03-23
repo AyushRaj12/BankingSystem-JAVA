@@ -18,7 +18,7 @@ public class Bank{
 	}
 
 	private Long getAccount(Long accountNumber) {
-		// complete the function
+	
 		return accountNumber;
 	}
 
@@ -41,26 +41,26 @@ public class Bank{
 	}
 
 	public boolean authenticateUser(Long accountNumber, int pin) {
-		// complete the function
+		
 		Account account = accounts.get(accountNumber);
         return account.validatePin(pin) && account!=null && account.getAccountNumber().equals(accountNumber);
 	}
 
 	public double getBalance(Long accountNumber) {
-		// complete the function
+	
 		Account account = accounts.get(accountNumber);
 		return account.getBalance();
 
 	}
 
 	public void credit(Long accountNumber, double amount) {
-		// complete the function
+		
 		Account account = accounts.get(accountNumber);
 		account.creditAccount(amount);
 	}
 
 	public boolean debit(Long accountNumber, double amount) {
-		// complete the function
+		
 		Account account = accounts.get(accountNumber);
 		if(account.getBalance()>0 && account.getBalance()>=amount) {
 			return account.debitAccount(amount);
