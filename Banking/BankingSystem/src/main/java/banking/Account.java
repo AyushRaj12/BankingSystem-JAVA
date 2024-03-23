@@ -30,24 +30,24 @@ public abstract class Account {
 	}
 
 	public boolean validatePin(int attemptedPin) {
-		// complete the function
+		
 		  return pin==attemptedPin;
 	}
 
 	public double getBalance() {
-		// complete the function
+		
 		return balance;
 
 	}
 
 	public Long getAccountNumber() {
-		// complete the function
+		
 		return accountNumber;
 
 	}
 
 	public void creditAccount(double amount) {
-		// complete the function
+		
 		if(amount>0){
 		balance += amount;}
 	}
